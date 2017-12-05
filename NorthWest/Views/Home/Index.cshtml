@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+    if (ViewBag.layoutType=="Customer")
+    {
+        Layout = "~/Views/Shared/_customerLayout.cshtml";
+    }
+    else if(ViewBag.layoutType == "Seattle")
+    {
+        Layout = "~/Views/Shared/_seattleLayout.cshtml";
+    }
+    else if (ViewBag.layoutType == "Singapore")
+    {
+        Layout = "~/Views/Shared/_singaporeLayout.cshtml";
+    }
+    else if (ViewBag.layoutType == "Seattle")
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
+
+<div class="landingBox">
+    <center>
+        <h1>Northwest Labs</h1>
+        <h3>Welcome</h3>
+        <p>Don't have an account? Click "Contact" to get in touch with a company representative</p>
+        <div class="row">
+            <center>
+                <div class="col-sm-12">
+                    @Html.ActionLink("Sign In", "Login", "Home", null, new { @class = "btn btn-primary" })
+                </div>
+            </center>
+
+            @*<div class="col-sm-6">
+                @Html.ActionLink("Employee Sign-in", "Index", "Seattle", null, new { @class = "btn btn-primary" })
+            </div>*@
+        </div>
+    </center>
+</div>
+<div class="backImage">
+    <img class="backImage" src="~/Content/images/singaporeBack.jpg" />
+</div>
+

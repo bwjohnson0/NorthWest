@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+    if (ViewBag.layoutType == "Customer")
+    {
+        Layout = "~/Views/Shared/_customerLayout.cshtml";
+    }
+    else if (ViewBag.layoutType == "Seattle")
+    {
+        Layout = "~/Views/Shared/_seattleLayout.cshtml";
+    }
+    else if (ViewBag.layoutType == "Singapore")
+    {
+        Layout = "~/Views/Shared/_singaporeLayout.cshtml";
+    }
+    else if (ViewBag.layoutType == "Seattle")
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
+<center>
+    <h2 class="headings">Customer Dashboard</h2>
+</center>
+<div>
+    <div class="row">
+        <div class="col-xs-4">
+            <center>
+                <a><span class="glyphicon glyphicon-time glyph-lg-md-margin"></span></a>
+                <p></p>
+                @*@Html.ActionLink("Order Status", "Index", "Seattle", null, new { @class = "btn btn-primary" })*@
+                <h4>
+                    Order Status
+                </h4>
+            </center>
+
+        </div>
+        <div class="col-xs-4">
+            <center>
+                <a><span class="glyphicon glyphicon-list-alt glyph-lg-md-margin"></span></a>
+                <p></p>
+                @*@Html.ActionLink("Order Status", "Index", "Seattle", null, new { @class = "btn btn-primary" })*@
+                <h4>
+                    Order Details
+                </h4>
+            </center>
+        </div>
+        <div class="col-xs-4">
+            <center>
+                <a><span class="glyphicon glyphicon-question-sign glyph-lg-md-margin"></span></a>
+                <p></p>
+                @*@Html.ActionLink("Order Status", "Index", "Seattle", null, new { @class = "btn btn-primary" })*@
+                <h4>
+                    Help
+                </h4>
+            </center>
+        </div>
+    </div>
+</div>
+

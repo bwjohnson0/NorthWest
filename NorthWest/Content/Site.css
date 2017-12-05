@@ -1,0 +1,84 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.landingBox {
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    padding: 10px;
+    margin-top: 100px;
+    opacity: 0.85;
+    left: 20%;
+    right: 20%;
+    border-radius: 6px;
+}
+.backImage {
+    position: absolute;
+    width: 98%;
+    margin-top: 15px;
+    z-index: -1;
+    right: 5%;
+    left: 1%;
+}
+h1, h2, h3, h4 {
+    color: #65686d;
+}
+button{
+    margin:2px;
+}
+.glyph-lg{
+    font-size: 3em;
+    margin-top: 80px;
+}
+.glyph-lg-no-margin {
+    font-size: 3em;
+    margin-top: 10px;
+}
+.glyph-lg-md-margin {
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.headings{
+    text-decoration: underline;
+}
+.form-control-modify {
+    /*display: block;*/
+    margin: 5px;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+

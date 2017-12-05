@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<div class="landingBox">
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+        <p></p>
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-2">
+                    <label for="inputEmail">Email address</label>
+                </div>
+                <div class="col-xs-4">
+                    @Html.TextBox("Email Address", null, new { @class = "form-control-modify" })
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-2">
+                    <label for="inputPassword">Password</label>
+                </div>
+                <div class="col-xs-4">
+                    @Html.Password("Password", null, new { @class = "form-control-modify" })
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+            <p></p>
+            <p></p>
+            <center>
+                <button type="submit" class="btn btn-success">Login</button>
+            </center>
+            <p>Forgot your username? Click "Contact" above to contact a representative</p>
+    }
+</div>
+<div class="backImage">
+    <img class="backImage" src="~/Content/images/singaporeBack.jpg" />
+</div>
+

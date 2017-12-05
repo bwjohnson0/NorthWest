@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+    if (ViewBag.layoutType == "Customer")
+    {
+        Layout = "~/Views/Shared/_customerLayout.cshtml";
+    }
+    else if (ViewBag.layoutType == "Seattle")
+    {
+        Layout = "~/Views/Shared/_seattleLayout.cshtml";
+    }
+    else if (ViewBag.layoutType == "Singapore")
+    {
+        Layout = "~/Views/Shared/_singaporeLayout.cshtml";
+    }
+    else if (ViewBag.layoutType == "Seattle")
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
+
+<center>
+    <h1 class="headings">Singapore Dashboard</h1>
+</center>
+<div>
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-4">
+            <center>
+                <a><span class="glyphicon glyphicon-calendar glyph-lg-md-margin"></span></a>
+                <p></p>
+                @*@Html.ActionLink("Employee Reports", "Index", "Seattle", null, new { @class = "btn btn-primary" })*@
+                <h4>
+                    Weekly Schedule
+                </h4>
+            </center>
+
+        </div>
+        <div class="col-xs-4">
+            <center>
+                <a><span class="glyphicon glyphicon-list glyph-lg-md-margin"></span></a>
+                <p></p>
+                @*@Html.ActionLink("View Sales Activities", "Index", "Seattle", null, new { @class = "btn btn-primary" })*@
+                <h4>
+                    View and Search Orders
+                </h4>
+            </center>
+        </div>
+        <div class="col-xs-2"></div>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-4">
+            <center>
+                <a><span class="glyphicon glyphicon-wrench glyph-lg"></span></a>
+                <p></p>
+                @*@Html.ActionLink("Generate Price Quote", "Index", "Seattle", null, new { @class = "btn btn-primary" })*@
+                <h4>
+                    Maintain Work Orders
+                </h4>
+            </center>
+
+        </div>
+        <div class="col-xs-4">
+            <center>
+                <a><span class="glyphicon glyphicon-folder-open glyph-lg"></span></a>
+                <p></p>
+                @*@Html.ActionLink("Search Order Information", "Index", "Seattle", null, new { @class = "btn btn-primary" })*@
+                <h4>
+                    Documents
+                </h4>
+            </center>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+</div>
+
